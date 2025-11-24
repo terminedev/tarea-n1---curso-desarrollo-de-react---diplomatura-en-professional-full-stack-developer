@@ -9,6 +9,7 @@
     --color-secundario: rgb(80, 0, 255);
     --fuente-base: 'Times New Roman', Times, serif;
     --fuente-secundaria: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-gutter: stable;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 
     color: rgb(255, 255, 255);
     font-family: var(--fuente-base);
-    animation: color-change-2x 5s linear infinite alternate both
+    animation: color-change-2x 5s linear infinite alternate both;
 }
 
 @keyframes color-change-2x {
