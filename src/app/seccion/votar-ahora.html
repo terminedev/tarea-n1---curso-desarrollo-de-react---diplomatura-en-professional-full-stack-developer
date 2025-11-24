@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Votar ahora | Los Juegos del Año 3023</title>
+    <title> Nominaciones | Los Juegos del Año 3023</title>
+
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/votar-ahora.css">
+    <link rel="icon" type="image/x-icon" href="../../../public/ico/logotipo.ico">
 </head>
 
 <body>
@@ -12,24 +16,25 @@
         <h1>Juegos del Año 3023</h1>
 
         <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">
-                        <img src="" alt="Logotipo Juegos del año 2035">
+            <ul class="navbarPrincipal">
+                <li class="itemLogotipoOficialJuegosAnio3023">
+                    <a href="../index.html">
+                        <img src="../../../public/logo/logotipo.png" alt="Logotipo Juegos del año 3023"
+                            class="logotipoOficialJuegosAnio3023">
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html">
+                    <a href="../index.html" class="navegacionNavbarPrincipal">
                         Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="./seccion/nominaciones.html">
+                    <a href="../seccion/nominaciones.html" class="navegacionNavbarPrincipal">
                         Nominaciones
                     </a>
                 </li>
                 <li>
-                    <a href="./seccion/votar-ahora.html">
+                    <a href="../seccion/votar-ahora.html" class="navegacionNavbarPrincipal">
                         Votar ahora
                     </a>
                 </li>
@@ -42,19 +47,22 @@
             <h2>¡Tu elección puede hacer la diferencia!</h2>
 
             <form>
-                <label for="nombreUsuario"></label>
-                <input type="text" placeholder="Introduce tu nombre" id="nombreUsuario" name="nombreUsuario">
+                <label for="nombreUsuario">Nombre:</label>
+                <input type="text" placeholder="Nombre génerico" id="nombreUsuario" name="nombreUsuario" required
+                    min="3" max="15">
 
-                <label for="correoUsuario"></label>
-                <input type="email" placeholder="Introduce tu email" id="correoUsuario" name="correoUsuario">
+                <label for="correoUsuario">Correo electrónico</label>
+                <input type="email" placeholder="correo123@gmail.com" id="correoUsuario" name="correoUsuario" required>
 
-                <select>
-                    <option value="Juego 1">Juego 1</option>
-                    <option value="Juego 2">Juego 2</option>
-                    <option value="Juego 3">Juego 3</option>
-                    <option value="Juego 4">Juego 4</option>
-                    <option value="Juego 5">Juego 5</option>
-                    <option value="Juego 6">Juego 6</option>
+                <label for="voto-elegido">Juego a votar:</label>
+                <select name="voto-elegido" id="voto-elegido" required>
+                    <option value="" selected>Selecciona una opción</option>
+                    <option value="Cyber crusade">Cyber crusade</option>
+                    <option value="Dragon quest">Dragon quest</option>
+                    <option value="Fantasy odyssey">Fantasy odyssey</option>
+                    <option value="Galactic war">Galactic war</option>
+                    <option value="Shadow strike">Shadow strike</option>
+                    <option value="Zombie apocalyse">Zombie apocalyse</option>
                 </select>
 
                 <button type="submit">¡Enviar!</button>
