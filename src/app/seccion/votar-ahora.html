@@ -12,50 +12,49 @@
 </head>
 
 <body>
-    <header>
-        <h1>Juegos del Año 3023</h1>
-
-        <nav>
-            <ul class="navbarPrincipal">
-                <li class="itemLogotipoOficialJuegosAnio3023">
+    <header class="encabezadoPrincipal">
+        <nav class="navegacionPrincipal">
+            <ul class="navegacionPrincipalListado">
+                <li class="navegacionPrincipalListadoLogotipo3023">
                     <a href="../index.html">
                         <img src="../../../public/logo/logotipo.png" alt="Logotipo Juegos del año 3023"
                             class="logotipoOficialJuegosAnio3023">
                     </a>
                 </li>
-                <li>
-                    <a href="../index.html" class="navegacionNavbarPrincipal">
+                <li class="navegacionPrincipalListadoItem">
+                    <a href="../index.html" class="navegacionPrincipalListadoLink">
                         Inicio
                     </a>
                 </li>
-                <li>
-                    <a href="../seccion/nominaciones.html" class="navegacionNavbarPrincipal">
+                <li class="navegacionPrincipalListadoItem">
+                    <a href="../seccion/nominaciones.html" class="navegacionPrincipalListadoLink">
                         Nominaciones
                     </a>
                 </li>
-                <li>
-                    <a href="../seccion/votar-ahora.html" class="navegacionNavbarPrincipal">
-                        Votar ahora
+                <li class="navegacionPrincipalListadoItem">
+                    <a href="../seccion/votar-ahora.html" class="navegacionPrincipalListadoLink">
+                        Votar
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <article>
-            <h2>¡Tu elección puede hacer la diferencia!</h2>
+    <main class="contenidoPrincipal">
+        <article class="articuloPrincipal">
+            <h2 class="tituloArticulo">¡Tu elección puede hacer la diferencia!</h2>
 
-            <form>
-                <label for="nombreUsuario">Nombre:</label>
+            <form class="formularioVotacion">
+                <label for="nombreUsuario" class="nombreLabel">Nombre:</label>
                 <input type="text" placeholder="Nombre génerico" id="nombreUsuario" name="nombreUsuario" required
-                    min="3" max="15">
+                    min="3" max="15" class="inputVotacion">
 
-                <label for="correoUsuario">Correo electrónico</label>
-                <input type="email" placeholder="correo123@gmail.com" id="correoUsuario" name="correoUsuario" required>
+                <label for="correoUsuario" class="nombreLabel">Correo electrónico</label>
+                <input type="email" placeholder="correo123@gmail.com" id="correoUsuario" name="correoUsuario"
+                    class="inputVotacion" required>
 
-                <label for="voto-elegido">Juego a votar:</label>
-                <select name="voto-elegido" id="voto-elegido" required>
+                <label for="voto-elegido" class="nombreLabel">Juego a votar:</label>
+                <select name="voto-elegido" id="voto-elegido" class="inputVotacion" required>
                     <option value="" selected>Selecciona una opción</option>
                     <option value="Cyber crusade">Cyber crusade</option>
                     <option value="Dragon quest">Dragon quest</option>
@@ -65,18 +64,19 @@
                     <option value="Zombie apocalyse">Zombie apocalyse</option>
                 </select>
 
-                <button type="submit">¡Enviar!</button>
+                <button type="submit" class="terminarVotacionBtn">¡Enviar!</button>
             </form>
 
         </article>
     </main>
 
-    <footer>
-        <small>Gastøn ♱érmine | 2025</small>
-        <a href="/https://github.com/terminedev" target="_blank" rel="noopener noreferrer">
-            Perfil de Github
+    <footer class="piePaginaPrincipal">
+        <small class="autorCss">Gastøn ♱érmine | 2025</small>
+        <a href="https://github.com/terminedev" target="_blank" rel="noopener noreferrer" class="linkGithub">
+            <em>Perfil de Github</em>
         </a>
-        <q>Proyecto realizado con la finalidad de cumplir con la Tarea N.º 1 del curso Desarrollo de React,
+        <q class="infoComplementaria">Proyecto realizado con la finalidad de cumplir con la Tarea N.º 1 del curso
+            Desarrollo de React,
             perteneciente a la Diplomatura en Professional Full-Stack Developer (UTN 2025/2026).</q>
     </footer>
 </body>

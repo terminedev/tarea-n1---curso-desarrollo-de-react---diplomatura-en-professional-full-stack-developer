@@ -22,79 +22,80 @@
     text-transform: uppercase;
     font-weight: 700;
 
-    font-size: 1.5rem;
+    font-size: .75rem;
 }
 
-.navegacionEnElBanner {
-    width: auto;
-    height: auto;
+.navegacionEnElBannerPrincipal {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
     position: absolute;
     bottom: 0;
     right: 0;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
     list-style: none;
-
-    padding: 2rem;
+    gap: .75rem;
 }
 
-.LinkEnElBanner {
-    color: var(--color-secundario);
+.LinkEnElBannerPrincipal {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     font-family: var(--fuente-secundaria);
 
     text-transform: uppercase;
     text-decoration: none;
-    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     text-shadow: none;
     font-weight: 700;
-    padding: .5rem;
-    font-size: 1.5rem;
+    padding: .25rem;
+    font-size: .75rem;
 
     transition: box-shadow .3s;
+    background: linear-gradient(144deg, var(--color-secundario), var(--color-principal));
 }
 
-.LinkEnElBanner:hover {
+.LinkEnElBannerPrincipal:hover {
     box-shadow: 0px 0px 1rem rgb(255, 255, 255)
 }
 
-article {
-    padding: 1rem;
-    margin: 3rem;
-
-    width: auto;
+.articuloPrincipal {
+    width: 100%;
     height: auto;
-    max-width: 768px;
-    background-color: rgba(0, 0, 0, 0.877);
-    border: 1px solid rgb(255, 255, 255);
-
-    border-radius: 1rem;
 
     display: flex;
-    align-items: start;
-    justify-content: start;
-    text-align: start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: .75rem;
 }
 
-h2 {
-    font-size: 2rem;
+.articuloPrincipalTitulo {
+    width: 100%;
+    text-align: start;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+
+    font-style: italic;
     text-decoration: underline;
+    font-size: 1.25rem;
 }
 
-h3 {
-    text-decoration: underline;
+.articuloPrincipalParrafo {
+    width: 100%;
+    font-size: 1rem;
+    text-align: start;
+    padding: 0px .25rem;
 }
 
-p {
-    font-size: 1.2rem;
+.articuloPrincipalListaPasos {
+    margin-bottom: 4rem;
 }
 
-ol {
-    padding-left: 1.5rem;
+.articuloPrincipalListaPasosItem {
+    padding-left: 1rem;
 }
